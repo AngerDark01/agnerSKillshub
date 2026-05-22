@@ -4,5 +4,4 @@ __pycache__/
 **/__pycache__/
 *.pyc
 skills/*/output/
-sync/skills/
 logs/

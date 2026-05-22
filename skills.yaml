@@ -1,10 +1,9 @@
 version: "3.0"
 repo: "AngerDark01/agnerSKillshub"
-layout: categorized-source-with-flat-sync
+layout: skillshare-native-categorized-source
 source: "skills"
-skillshare_source: "sync/skills"
-catalog: "catalog/README.md"
-rebuild_sync: "scripts/rebuild-sync.sh"
+skillshare_source: "skills"
+codex_target_naming: "standard"
 
 categories:
   00-meta-system:

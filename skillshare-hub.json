@@ -1,318 +1,383 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-22T05:43:26Z",
-  "sourcePath": "/home/aseit/桌面/桌面/agener_skillshub/sync/skills",
+  "generatedAt": "2026-05-22T06:57:44Z",
+  "sourcePath": "/home/aseit/桌面/桌面/agener_skillshub/skills",
   "skills": [
     {
       "name": "associative-research",
-      "source": "associative-research"
+      "source": "07-research-analysis/associative-research",
+      "flatName": "07-research-analysis__associative-research"
     },
     {
       "name": "autobid-initializer",
-      "source": "autobid-initializer"
+      "source": "11-domain-autobid/autobid-initializer",
+      "flatName": "11-domain-autobid__autobid-initializer"
     },
     {
       "name": "autobid-office-tools",
-      "source": "autobid-office-tools"
+      "source": "11-domain-autobid/autobid-office-tools",
+      "flatName": "11-domain-autobid__autobid-office-tools"
     },
     {
       "name": "autobid-orchestrator",
-      "source": "autobid-orchestrator"
+      "source": "11-domain-autobid/autobid-orchestrator",
+      "flatName": "11-domain-autobid__autobid-orchestrator"
     },
     {
       "name": "autobid-phase1-extractor",
-      "source": "autobid-phase1-extractor"
+      "source": "11-domain-autobid/autobid-phase1-extractor",
+      "flatName": "11-domain-autobid__autobid-phase1-extractor"
     },
     {
       "name": "autobid-phase2-composer",
-      "source": "autobid-phase2-composer"
+      "source": "11-domain-autobid/autobid-phase2-composer",
+      "flatName": "11-domain-autobid__autobid-phase2-composer"
     },
     {
       "name": "brainstorming",
       "description": "Transforms ideas into validated designs before any implementation begins. Hard-gates all code writing until a design is approved. Use when starting any new project, feature, or significant change. Triggers: \\\"let's plan this\\\", \\\"I want to build\\\", \\\"design this feature\\\", \\\"let's think through\\\", or any new feature request before coding starts.",
-      "source": "brainstorming"
+      "source": "01-planning-execution/brainstorming",
+      "flatName": "01-planning-execution__brainstorming"
     },
     {
       "name": "bundle-size-optimizer",
       "description": "Analyzes and reduces JavaScript bundle size through dependency auditing, code splitting, tree shaking, and import optimization. Targets measurable reductions in initial bundle weight. Triggers: \\\"bundle is too large\\\", \\\"reduce bundle size\\\", \\\"optimize imports\\\", \\\"tree shaking\\\", \\\"code splitting\\\", \\\"too much JavaScript\\\", \\\"slow initial load\\\".",
-      "source": "bundle-size-optimizer"
+      "source": "04-frontend-performance/bundle-size-optimizer",
+      "flatName": "04-frontend-performance__bundle-size-optimizer"
     },
     {
       "name": "chrome-cdp",
       "description": "控制本地 Chrome 浏览器（截图、点击、输入、执行 JS、提取 CSS）。需要用户明确要求操作 Chrome 时触发。依赖 chrome-cdp-setup 完成首次配置。",
-      "source": "chrome-cdp"
+      "source": "06-browser-automation/chrome-cdp",
+      "flatName": "06-browser-automation__chrome-cdp"
     },
     {
       "name": "chrome-cdp-setup",
       "description": "chrome-cdp 首次安装配置向导。当用户说「安装 chrome-cdp」「配置浏览器调试」「chrome-cdp 报错」「cdp 连不上」时触发。覆盖 Linux/macOS 全部已知坑。",
-      "source": "chrome-cdp-setup"
+      "source": "06-browser-automation/chrome-cdp-setup",
+      "flatName": "06-browser-automation__chrome-cdp-setup"
     },
     {
       "name": "codebase-ontology",
       "description": "Build and maintain a living CODEBASE.md that serves as complete project intelligence — directory map with per-file annotations, module details, function signatures with full algorithm implementations, complete data flow chains (trigger→every function hop→callback), and risk register. Three modes: SCAN (build from scratch, strictly round-by-round, NEVER all at once), UPDATE (post-refactor rebuild), SYNC (agent MUST self-trigger after ANY code change before reporting done). Coverage tracking lives in ITERATION_LOG, not in CODEBASE. Use when: mapping a project, onboarding, debugging, architecture review, or after any file modification.",
-      "source": "codebase-ontology"
+      "source": "02-code-quality/codebase-ontology",
+      "flatName": "02-code-quality__codebase-ontology"
     },
     {
       "name": "continuous-discovery",
       "description": "Run Teresa Torres's continuous discovery cadence — weekly customer touchpoints, Opportunity Solution Trees, and assumption testing — to ensure teams always build the right thing.",
-      "source": "continuous-discovery"
+      "source": "08-product-discovery-strategy/continuous-discovery",
+      "flatName": "08-product-discovery-strategy__continuous-discovery"
     },
     {
       "name": "customer-journey-map",
       "description": "Map the end-to-end customer experience across 7 stages — from awareness to advocacy — identifying aha moments, pain points, churn triggers, and improvement opportunities at each touchpoint.",
-      "source": "customer-journey-map"
+      "source": "08-product-discovery-strategy/customer-journey-map",
+      "flatName": "08-product-discovery-strategy__customer-journey-map"
     },
     {
       "name": "delivery-discipline",
-      "source": "delivery-discipline"
+      "source": "00-meta-system/delivery-discipline",
+      "flatName": "00-meta-system__delivery-discipline"
     },
     {
       "name": "design-sprint",
       "description": "Run Jake Knapp's 5-day Design Sprint to answer critical product questions through rapid prototyping and user testing — compress months of work into one focused week.",
-      "source": "design-sprint"
+      "source": "08-product-discovery-strategy/design-sprint",
+      "flatName": "08-product-discovery-strategy__design-sprint"
     },
     {
       "name": "design-system-architect",
       "description": "Designs and audits design system foundations: design tokens (color, spacing, typography, shadow), component APIs, and theming architecture. Use when building a new design system, auditing an existing one for consistency, or planning a migration from hardcoded styles to tokens. Triggers: \\\"design system\\\", \\\"design tokens\\\", \\\"theming\\\", \\\"audit our styles\\\", \\\"build a component library\\\", \\\"spacing system\\\", \\\"typography scale\\\".",
-      "source": "design-system-architect"
+      "source": "05-ui-design-ux/design-system-architect",
+      "flatName": "05-ui-design-ux__design-system-architect"
     },
     {
       "name": "doc",
       "description": "Use when the task involves reading, creating, or editing `.docx` documents, especially when formatting or layout fidelity matters; prefer `python-docx` plus the bundled `scripts/render_docx.py` for visual checks.",
-      "source": "doc"
+      "source": "09-requirements-docs/doc",
+      "flatName": "09-requirements-docs__doc"
     },
     {
       "name": "doc-coauthoring",
       "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
-      "source": "doc-coauthoring"
+      "source": "09-requirements-docs/doc-coauthoring",
+      "flatName": "09-requirements-docs__doc-coauthoring"
     },
     {
       "name": "executing-plans",
       "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
-      "source": "executing-plans"
+      "source": "01-planning-execution/executing-plans",
+      "flatName": "01-planning-execution__executing-plans"
     },
     {
       "name": "feature-prioritization",
       "description": "Apply RICE, ICE, Kano, and MoSCoW frameworks to prioritize features objectively — score candidates, surface hidden assumptions, and build a defensible, outcome-linked backlog.",
-      "source": "feature-prioritization"
+      "source": "09-requirements-docs/feature-prioritization",
+      "flatName": "09-requirements-docs__feature-prioritization"
     },
     {
       "name": "figma-to-component",
       "description": "Converts Figma designs (screenshots, descriptions, or exported assets) into production-ready React/Vue components that faithfully implement the design. Extracts design tokens from the design and maps them to code. Triggers: \\\"implement this Figma design\\\", \\\"convert this design to code\\\", \\\"build this from the mockup\\\", \\\"code this UI design\\\", \\\"implement the design spec\\\".",
-      "source": "figma-to-component"
+      "source": "05-ui-design-ux/figma-to-component",
+      "flatName": "05-ui-design-ux__figma-to-component"
     },
     {
       "name": "frontend-architecture-designer",
       "description": "Designs scalable frontend application architectures: feature-based folder structure, module boundaries, data flow patterns, and component hierarchy. Use when starting a new project, restructuring an existing one, or planning a major refactor. Triggers: \\\"design the architecture\\\", \\\"structure the project\\\", \\\"how should we organize this\\\", \\\"frontend architecture\\\", \\\"project structure\\\", \\\"modular architecture\\\".",
-      "source": "frontend-architecture-designer"
+      "source": "03-frontend-architecture/frontend-architecture-designer",
+      "flatName": "03-frontend-architecture__frontend-architecture-designer"
     },
     {
       "name": "frontend-code-reviewer",
       "description": "Reviews frontend code (React/Vue/HTML/CSS) for code quality, accessibility compliance, performance anti-patterns, and UX issues. Produces categorized findings with specific fixes. Triggers: \\\"review this frontend code\\\", \\\"check this component\\\", \\\"accessibility audit\\\", \\\"review my CSS\\\", \\\"check this React code\\\", \\\"code review\\\", \\\"frontend review\\\".",
-      "source": "frontend-code-reviewer"
+      "source": "05-ui-design-ux/frontend-code-reviewer",
+      "flatName": "05-ui-design-ux__frontend-code-reviewer"
     },
     {
       "name": "frontend-design",
       "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
-      "source": "frontend-design"
+      "source": "05-ui-design-ux/frontend-design",
+      "flatName": "05-ui-design-ux__frontend-design"
     },
     {
       "name": "frontend-performance-analyzer",
       "description": "Analyzes frontend performance: Core Web Vitals, render-blocking resources, bundle size, network waterfalls, and JavaScript execution. Produces prioritized optimization recommendations with measurable impact. Triggers: \\\"analyze performance\\\", \\\"why is this slow\\\", \\\"improve Web Vitals\\\", \\\"performance audit\\\", \\\"LCP is bad\\\", \\\"CLS issues\\\", \\\"TTI optimization\\\", \\\"profile this\\\".",
-      "source": "frontend-performance-analyzer"
+      "source": "04-frontend-performance/frontend-performance-analyzer",
+      "flatName": "04-frontend-performance__frontend-performance-analyzer"
     },
     {
       "name": "frontend-refactor",
       "description": "Refactors React components and hooks to improve composition, reduce prop drilling, eliminate boolean prop explosion, and enforce clean separation of concerns. Uses composition patterns over configuration. Triggers: \\\"refactor this component\\\", \\\"too many props\\\", \\\"simplify this\\\", \\\"split this component\\\", \\\"extract this logic\\\", \\\"hooks refactor\\\", \\\"component is too big\\\".",
-      "source": "frontend-refactor"
+      "source": "05-ui-design-ux/frontend-refactor",
+      "flatName": "05-ui-design-ux__frontend-refactor"
     },
     {
       "name": "gh-address-comments",
       "description": "Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in.",
-      "source": "gh-address-comments"
+      "source": "10-github-platform/gh-address-comments",
+      "flatName": "10-github-platform__gh-address-comments"
     },
     {
       "name": "gh-fix-ci",
       "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL.",
-      "source": "gh-fix-ci"
+      "source": "10-github-platform/gh-fix-ci",
+      "flatName": "10-github-platform__gh-fix-ci"
     },
     {
       "name": "hv-analysis",
-      "source": "hv-analysis"
+      "source": "07-research-analysis/hv-analysis",
+      "flatName": "07-research-analysis__hv-analysis"
     },
     {
       "name": "inspired-product",
       "description": "Apply Marty Cagan's empowered product team model — dual-track discovery/delivery, four product risks, opportunity assessment, and outcome-based OKRs — to build products customers love.",
-      "source": "inspired-product"
+      "source": "08-product-discovery-strategy/inspired-product",
+      "flatName": "08-product-discovery-strategy__inspired-product"
     },
     {
       "name": "interaction-flow-designer",
       "description": "Maps and designs user interaction flows, page state machines, and navigation architectures for web applications. Use when designing multi-step forms, onboarding flows, wizard UIs, modal stacks, or any feature requiring explicit state transitions. Triggers: \\\"design the user flow\\\", \\\"map out the interaction\\\", \\\"state machine for this feature\\\", \\\"how should users navigate\\\", \\\"design the UX flow\\\".",
-      "source": "interaction-flow-designer"
+      "source": "05-ui-design-ux/interaction-flow-designer",
+      "flatName": "05-ui-design-ux__interaction-flow-designer"
     },
     {
       "name": "jobs-to-be-done",
       "description": "Apply the Jobs-to-be-Done framework to uncover why customers hire a product, discover non-obvious competition, and frame opportunities using Christensen's Forces of Progress.",
-      "source": "jobs-to-be-done"
+      "source": "08-product-discovery-strategy/jobs-to-be-done",
+      "flatName": "08-product-discovery-strategy__jobs-to-be-done"
     },
     {
       "name": "khazix-writer",
-      "source": "khazix-writer"
+      "source": "13-writing-content/khazix-writer",
+      "flatName": "13-writing-content__khazix-writer"
     },
     {
       "name": "lean-ux",
       "description": "Apply Jeff Gothelf's Lean UX — declare assumptions, form hypothesis statements, build the smallest experiment to test them, and integrate discovery into dual-track Agile sprints.",
-      "source": "lean-ux"
+      "source": "08-product-discovery-strategy/lean-ux",
+      "flatName": "08-product-discovery-strategy__lean-ux"
     },
     {
       "name": "microinteraction-designer",
       "description": "Designs and implements micro-interactions: hover effects, loading states, transitions, animations, and feedback moments that make interfaces feel alive and responsive. Use when polishing UI components, adding motion to interactions, or making a UI feel more delightful. Triggers: \\\"add animations\\\", \\\"make it feel more alive\\\", \\\"loading states\\\", \\\"hover effects\\\", \\\"transition between states\\\", \\\"micro-interactions\\\", \\\"animate this\\\".",
-      "source": "microinteraction-designer"
+      "source": "05-ui-design-ux/microinteraction-designer",
+      "flatName": "05-ui-design-ux__microinteraction-designer"
     },
     {
       "name": "mom-test",
       "description": "Conduct customer interviews using Rob Fitzpatrick's Mom Test rules — ask about the customer's life (not your idea), get specific past facts, and seek commitment over compliments.",
-      "source": "mom-test"
+      "source": "08-product-discovery-strategy/mom-test",
+      "flatName": "08-product-discovery-strategy__mom-test"
     },
     {
       "name": "obviously-awesome",
       "description": "Apply April Dunford's 5-step positioning framework to define a product's competitive context, unique value, and ideal customer — making it obviously the best choice in its category.",
-      "source": "obviously-awesome"
+      "source": "08-product-discovery-strategy/obviously-awesome",
+      "flatName": "08-product-discovery-strategy__obviously-awesome"
     },
     {
       "name": "ontology-engineer",
-      "source": "ontology-engineer"
+      "source": "12-domain-ontology/ontology-engineer",
+      "flatName": "12-domain-ontology__ontology-engineer"
     },
     {
       "name": "openai-docs",
       "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations (for example: Codex, Responses API, Chat Completions, Apps SDK, Agents SDK, Realtime, model capabilities or limits); prioritize OpenAI docs MCP tools and restrict any fallback browsing to official OpenAI domains.",
-      "source": "openai-docs"
+      "source": "10-github-platform/openai-docs",
+      "flatName": "10-github-platform__openai-docs"
     },
     {
       "name": "pdf",
       "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction.",
-      "source": "pdf"
+      "source": "09-requirements-docs/pdf",
+      "flatName": "09-requirements-docs__pdf"
     },
     {
       "name": "playwright",
       "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
-      "source": "playwright"
+      "source": "06-browser-automation/playwright",
+      "flatName": "06-browser-automation__playwright"
     },
     {
       "name": "prd-writer",
       "description": "Write a concise, actionable Product Requirements Document (PRD) with structured problem framing, success metrics, scope boundaries, and implementation notes — ready for engineering handoff.",
-      "source": "prd-writer"
+      "source": "09-requirements-docs/prd-writer",
+      "flatName": "09-requirements-docs__prd-writer"
     },
     {
       "name": "product-landscape",
-      "source": "product-landscape"
+      "source": "07-research-analysis/product-landscape",
+      "flatName": "07-research-analysis__product-landscape"
     },
     {
       "name": "project-structure-manager",
       "description": "Analyzes and improves frontend project structure: identifies module boundary violations, circular dependencies, misplaced files, and structural debt. Produces a migration plan. Triggers: \\\"audit project structure\\\", \\\"fix module boundaries\\\", \\\"organize the codebase\\\", \\\"find circular dependencies\\\", \\\"repo structure\\\", \\\"where should this file go\\\", \\\"project organization\\\".",
-      "source": "project-structure-manager"
+      "source": "03-frontend-architecture/project-structure-manager",
+      "flatName": "03-frontend-architecture__project-structure-manager"
     },
     {
       "name": "react-render-optimizer",
       "description": "Identifies and fixes unnecessary React re-renders using memoization, stable references, and proper component architecture. Targets measurable frame-rate improvements and reduced CPU usage. Triggers: \\\"component re-renders too much\\\", \\\"React is slow\\\", \\\"optimize re-renders\\\", \\\"memo\\\", \\\"useMemo\\\", \\\"useCallback\\\", \\\"React profiler\\\", \\\"sluggish UI\\\".",
-      "source": "react-render-optimizer"
+      "source": "04-frontend-performance/react-render-optimizer",
+      "flatName": "04-frontend-performance__react-render-optimizer"
     },
     {
       "name": "receiving-code-review",
       "description": "Protocol for processing code review feedback with technical rigor, not emotional performance. Verify before implementing, ask before assuming, push back when wrong. Triggers: \\\"process code review\\\", \\\"I got review feedback\\\", \\\"responding to review\\\", or any time code review feedback needs to be acted on.",
-      "source": "receiving-code-review"
+      "source": "02-code-quality/receiving-code-review",
+      "flatName": "02-code-quality__receiving-code-review"
     },
     {
       "name": "requesting-code-review",
       "description": "Dispatches a code-reviewer subagent to catch issues before they cascade. Mandatory after each task in subagent-driven development, after completing major features, and before merging to main. Triggers: \\\"request code review\\\", \\\"review this code\\\", \\\"check my implementation\\\", or automatically as part of subagent-driven-development workflow.",
-      "source": "requesting-code-review"
+      "source": "02-code-quality/requesting-code-review",
+      "flatName": "02-code-quality__requesting-code-review"
     },
     {
       "name": "screenshot",
       "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
-      "source": "screenshot"
+      "source": "06-browser-automation/screenshot",
+      "flatName": "06-browser-automation__screenshot"
     },
     {
       "name": "security-best-practices",
       "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
-      "source": "security-best-practices"
+      "source": "02-code-quality/security-best-practices",
+      "flatName": "02-code-quality__security-best-practices"
     },
     {
       "name": "self-improvement",
       "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks. For CI-only/headless learning capture, use self-improvement-ci.",
-      "source": "self-improvement"
+      "source": "00-meta-system/self-improvement",
+      "flatName": "00-meta-system__self-improvement"
     },
     {
       "name": "skill-creator",
       "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
-      "source": "skill-creator"
+      "source": "00-meta-system/skill-creator",
+      "flatName": "00-meta-system__skill-creator"
     },
     {
       "name": "skillshare",
-      "source": "skillshare"
+      "source": "00-meta-system/skillshare",
+      "flatName": "00-meta-system__skillshare"
     },
     {
       "name": "state-management-architect",
       "description": "Designs state management architecture for React applications. Chooses the right tool for each state category (server state vs client state vs UI state), prevents over-engineering, and fixes common state management problems. Triggers: \\\"state management\\\", \\\"too much Redux\\\", \\\"should I use Redux\\\", \\\"React Query setup\\\", \\\"Zustand vs Context\\\", \\\"how to manage state\\\", \\\"state architecture\\\".",
-      "source": "state-management-architect"
+      "source": "03-frontend-architecture/state-management-architect",
+      "flatName": "03-frontend-architecture__state-management-architect"
     },
     {
       "name": "subagent-driven-development",
       "description": "Executes an implementation plan by dispatching a fresh subagent per task with two-stage review (spec compliance then code quality) after each. Produces high-quality, reviewed code with fast iteration inside the current session. Use when you have a written plan with mostly independent tasks. Triggers: \\\"execute the plan with subagents\\\", \\\"run subagent-driven dev\\\", or when writing-plans hands off after plan creation.",
-      "source": "subagent-driven-development"
+      "source": "01-planning-execution/subagent-driven-development",
+      "flatName": "01-planning-execution__subagent-driven-development"
     },
     {
       "name": "systematic-debugging",
       "description": "Four-phase mandatory debugging process that finds root causes before attempting any fix. Use for ANY technical issue — test failures, bugs, unexpected behavior, performance problems, build failures. Triggers: \\\"debug this\\\", \\\"fix this bug\\\", \\\"tests are failing\\\", \\\"something's broken\\\", or any situation where you might be tempted to try a quick fix.",
-      "source": "systematic-debugging"
+      "source": "02-code-quality/systematic-debugging",
+      "flatName": "02-code-quality__systematic-debugging"
     },
     {
       "name": "taskstate-runtime",
-      "source": "taskstate-runtime"
+      "source": "00-meta-system/taskstate-runtime",
+      "flatName": "00-meta-system__taskstate-runtime"
     },
     {
       "name": "tech-stack-scout",
-      "source": "tech-stack-scout"
+      "source": "07-research-analysis/tech-stack-scout",
+      "flatName": "07-research-analysis__tech-stack-scout"
     },
     {
       "name": "testing-generator",
       "description": "Generates unit tests, component tests, and integration tests for frontend code. Follows testing best practices: test behavior not implementation, meaningful assertions, edge case coverage. Triggers: \\\"write tests for this\\\", \\\"generate unit tests\\\", \\\"test this component\\\", \\\"add tests\\\", \\\"write test cases\\\", \\\"improve test coverage\\\".",
-      "source": "testing-generator"
+      "source": "02-code-quality/testing-generator",
+      "flatName": "02-code-quality__testing-generator"
     },
     {
       "name": "ui-component-generator",
       "description": "Generates production-grade, distinctive UI components for React or Vue with exceptional aesthetic quality. Avoids generic AI design patterns. Use when building web components, landing pages, dashboards, UI elements, or any frontend interface. Triggers: \\\"build this component\\\", \\\"create a UI for\\\", \\\"generate the frontend\\\", \\\"design this page\\\", \\\"make a landing page\\\", \\\"build a dashboard\\\", \\\"create this form\\\".",
-      "source": "ui-component-generator"
+      "source": "05-ui-design-ux/ui-component-generator",
+      "flatName": "05-ui-design-ux__ui-component-generator"
     },
     {
       "name": "ui-style-analyst",
       "description": "深度分析任意产品/网站的 UI 设计风格，控制真实 Chrome 浏览器多维度采集，提炼设计 DNA，输出可直接复用的 design-dna.md。当用户说「分析 XX 的设计风格」「帮我借鉴 XX 的 UI」「我想做成 Linear/Notion/Stripe 那种感觉」「学习某个产品的设计」「提取某个网站的设计语言」时立即触发。不要让用户手动截图或复制 CSS。",
-      "source": "ui-style-analyst"
+      "source": "05-ui-design-ux/ui-style-analyst",
+      "flatName": "05-ui-design-ux__ui-style-analyst"
     },
     {
       "name": "ui-style-extractor",
       "description": "Connect to an existing Chrome session, collect screenshots and CSS tokens from a target product, and produce reusable style-analysis artifacts for UI design work.",
-      "source": "ui-style-extractor"
+      "source": "05-ui-design-ux/ui-style-extractor",
+      "flatName": "05-ui-design-ux__ui-style-extractor"
     },
     {
       "name": "user-personas",
       "description": "Build evidence-calibrated user personas grounded in JTBD, behavioral research, and real customer data — not demographic assumptions or fictional archetypes.",
-      "source": "user-personas"
+      "source": "08-product-discovery-strategy/user-personas",
+      "flatName": "08-product-discovery-strategy__user-personas"
     },
     {
       "name": "user-stories",
       "description": "Write high-quality user stories using INVEST criteria and Given/When/Then acceptance criteria — breaking down features into independently deliverable, testable increments.",
-      "source": "user-stories"
+      "source": "09-requirements-docs/user-stories",
+      "flatName": "09-requirements-docs__user-stories"
     },
     {
       "name": "ux-heuristic-reviewer",
       "description": "Audits UI designs and implementations against Nielsen's 10 usability heuristics plus accessibility standards. Produces a prioritized list of issues with severity ratings and specific fixes. Triggers: \\\"review the UX\\\", \\\"usability audit\\\", \\\"check accessibility\\\", \\\"UX review\\\", \\\"is this good UX\\\", \\\"audit the interface\\\", \\\"check usability\\\".",
-      "source": "ux-heuristic-reviewer"
+      "source": "05-ui-design-ux/ux-heuristic-reviewer",
+      "flatName": "05-ui-design-ux__ux-heuristic-reviewer"
     },
     {
       "name": "writing-plans",
       "description": "Breaks an approved design into detailed, atomic 2-5 minute implementation tasks following TDD. Every task includes exact file paths, complete code snippets, and precise verification commands. Use after brainstorming completes. Triggers: \\\"write a plan\\\", \\\"break this into tasks\\\", \\\"create implementation plan\\\", or when brainstorming hands off after design approval.",
-      "source": "writing-plans"
+      "source": "01-planning-execution/writing-plans",
+      "flatName": "01-planning-execution__writing-plans"
     }
   ]
 }

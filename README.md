@@ -5,38 +5,28 @@ Personal AI agent skills managed through `skillshare`.
 ## Layout
 
 ```text
-skills/       Categorized source of truth for human review and editing
-sync/skills/  Generated flat source used by skillshare, ignored by Git
-catalog/      Category guide and rationale
-extras/       Candidate rules, commands, prompts
-agents/       Reserved for standalone agent definitions
+skills/       Categorized skillshare source, grouped for UI management
+extras/       Skillshare extras source for rules
 templates/    Skill templates
-scripts/      Maintenance scripts
 ```
 
-`skills/` is intentionally categorized by function. `sync/skills/` is generated because skillshare turns nested source paths into names such as `category__skill-name`; Codex should keep the clean original names.
-
-## Rebuild Sync Source
-
-Run this after editing categorized skills:
-
-```bash
-scripts/rebuild-sync.sh
-skillshare sync --dry-run
-skillshare sync --force
-```
+`skills/` is the actual skillshare source. Categories are real folders, so the CLI and web UI can manage the hub by group instead of reading a generated flat copy.
 
 ## Current Skillshare Source
 
 ```text
-/home/aseit/桌面/桌面/agener_skillshub/sync/skills
+/home/aseit/桌面/桌面/agener_skillshub/skills
 ```
 
 Configured target:
 
 ```text
 codex -> /home/aseit/.codex/skills
+mode: copy
+target_naming: standard
 ```
+
+`target_naming: standard` keeps Codex skill folders as clean names such as `skillshare` and `requesting-code-review`, even though the source is grouped under category folders.
 
 ## Common Commands
 
