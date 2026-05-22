@@ -6,7 +6,6 @@ Personal AI agent skills managed through `skillshare`.
 
 ```text
 skills/       Categorized skillshare source, grouped for UI management
-extras/       Skillshare extras source for rules
 templates/    Skill templates
 ```
 
