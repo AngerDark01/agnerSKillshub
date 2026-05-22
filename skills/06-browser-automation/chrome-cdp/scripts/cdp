@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# cdp wrapper — resolves Node 22 via nvm automatically
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Priority: nvm v22 → any nvm node ≥22 → system node ≥22
+NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
+if [ -f "$NVM_DIR/versions/node/v22.22.2/bin/node" ]; then
+  NODE="$NVM_DIR/versions/node/v22.22.2/bin/node"
+elif [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh" --no-use 2>/dev/null
+  NODE=$(ls "$NVM_DIR/versions/node/" 2>/dev/null | sort -V | awk -F'v' '$2+0>=22{print}' | tail -1)
+  NODE="$NVM_DIR/versions/node/$NODE/bin/node"
+elif command -v node >/dev/null 2>&1; then
+  VER=$(node -e "console.log(+process.version.split('.')[0].slice(1))" 2>/dev/null)
+  [ "${VER:-0}" -ge 22 ] && NODE="node"
+fi
+
+if [ -z "$NODE" ] || ! "$NODE" --version >/dev/null 2>&1; then
+  echo "ERROR: Node 22+ is required." >&2
+  echo "Fix: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash && nvm install 22" >&2
+  exit 1
+fi
+
+exec "$NODE" "$SCRIPT_DIR/cdp.mjs" "$@"

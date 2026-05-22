@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autobid Phase1 Extractor"
+  short_description: "Extract reusable bid facts before writing"
+  default_prompt: "Use this skill to run phase1 bid extraction: preschedule, qualifications, scoring rules, source ranges, and store-backed outputs that phase2 can consume."

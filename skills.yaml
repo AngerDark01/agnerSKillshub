@@ -1,0 +1,128 @@
+version: "3.0"
+repo: "AngerDark01/agnerSKillshub"
+layout: skillshare-native-categorized-source
+source: "skills"
+skillshare_source: "skills"
+codex_target_naming: "standard"
+
+categories:
+  00-meta-system:
+    description: Agent operating discipline, skill management, task control, and continuous improvement.
+    skills:
+      - delivery-discipline
+      - self-improvement
+      - skill-creator
+      - skillshare
+      - taskstate-runtime
+
+  01-planning-execution:
+    description: Design validation, implementation planning, and execution workflows.
+    skills:
+      - brainstorming
+      - writing-plans
+      - executing-plans
+      - subagent-driven-development
+
+  02-code-quality:
+    description: Project understanding, debugging, testing, review, and security quality.
+    skills:
+      - codebase-ontology
+      - systematic-debugging
+      - requesting-code-review
+      - receiving-code-review
+      - testing-generator
+      - security-best-practices
+
+  03-frontend-architecture:
+    description: Frontend project structure, module boundaries, and state architecture.
+    skills:
+      - frontend-architecture-designer
+      - project-structure-manager
+      - state-management-architect
+
+  04-frontend-performance:
+    description: Bundle size, Web Vitals, and React rendering performance.
+    skills:
+      - bundle-size-optimizer
+      - frontend-performance-analyzer
+      - react-render-optimizer
+
+  05-ui-design-ux:
+    description: UI generation, design systems, interaction design, visual style extraction, and UX review.
+    skills:
+      - design-system-architect
+      - figma-to-component
+      - frontend-design
+      - frontend-code-reviewer
+      - frontend-refactor
+      - interaction-flow-designer
+      - microinteraction-designer
+      - ui-component-generator
+      - ui-style-analyst
+      - ui-style-extractor
+      - ux-heuristic-reviewer
+
+  06-browser-automation:
+    description: Browser automation, browser setup, and screenshot capture.
+    skills:
+      - chrome-cdp
+      - chrome-cdp-setup
+      - playwright
+      - screenshot
+
+  07-research-analysis:
+    description: Product, market, technical, and deep research.
+    skills:
+      - associative-research
+      - product-landscape
+      - tech-stack-scout
+      - hv-analysis
+
+  08-product-discovery-strategy:
+    description: Product discovery, customer research, positioning, and strategy frameworks.
+    skills:
+      - continuous-discovery
+      - customer-journey-map
+      - design-sprint
+      - inspired-product
+      - jobs-to-be-done
+      - lean-ux
+      - mom-test
+      - obviously-awesome
+      - user-personas
+
+  09-requirements-docs:
+    description: Requirements writing, prioritization, stories, and document production.
+    skills:
+      - feature-prioritization
+      - prd-writer
+      - user-stories
+      - doc-coauthoring
+      - doc
+      - pdf
+
+  10-github-platform:
+    description: GitHub workflow and OpenAI platform documentation.
+    skills:
+      - gh-address-comments
+      - gh-fix-ci
+      - openai-docs
+
+  11-domain-autobid:
+    description: Tender and bid document workflow.
+    skills:
+      - autobid-initializer
+      - autobid-office-tools
+      - autobid-orchestrator
+      - autobid-phase1-extractor
+      - autobid-phase2-composer
+
+  12-domain-ontology:
+    description: Ontology and semantic/domain modeling.
+    skills:
+      - ontology-engineer
+
+  13-writing-content:
+    description: Long-form writing and content style.
+    skills:
+      - khazix-writer

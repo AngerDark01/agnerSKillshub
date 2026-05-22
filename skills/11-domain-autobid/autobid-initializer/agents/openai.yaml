@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autobid Initializer"
+  short_description: "Initialize bid workspaces and task stores"
+  default_prompt: "Use this skill to initialize a bid workspace, register source files, extract baseline metadata and chapter boundaries, and return a task store ready for phase1 extraction."
