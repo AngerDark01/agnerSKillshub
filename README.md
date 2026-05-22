@@ -7,7 +7,6 @@ Personal AI agent skills managed through `skillshare`.
 ```text
 skills/       Categorized skillshare source, grouped for UI management
 templates/    Skill templates
-web-manager/  Local browser tool for creating categories and moving skills
 ```
 
 `skills/` is the actual skillshare source. Categories are real folders, so the CLI and web UI can manage the hub by group instead of reading a generated flat copy.
@@ -40,18 +39,6 @@ skillshare doctor
 ```
 
 ## Web UI
-
-Local category manager:
-
-```bash
-node web-manager/server.mjs --port 19431
-```
-
-Open:
-
-```text
-http://127.0.0.1:19431
-```
 
 Official skillshare dashboard:
 
