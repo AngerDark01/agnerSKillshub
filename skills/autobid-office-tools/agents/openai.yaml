@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autobid Office Tools"
+  short_description: "Run DOCX, XLSX, Office, and task-store tools"
+  default_prompt: "Use this skill for mechanical Office operations in bid workflows: inspect DOCX coordinates, split or write documents, read tables and XLSX attachments, pack and validate files, and persist task-store values."

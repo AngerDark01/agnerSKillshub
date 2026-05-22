@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autobid Phase2 Composer"
+  short_description: "Compose business and technical bid documents"
+  default_prompt: "Use this skill to compose phase2 bid outputs: freeze output section templates, choose processing modes, dispatch file and chapter work, assemble DOCX files, and verify final documents."

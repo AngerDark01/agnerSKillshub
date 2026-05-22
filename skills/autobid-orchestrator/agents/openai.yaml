@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autobid Orchestrator"
+  short_description: "Route bid-document work through phase gates and child skills"
+  default_prompt: "Use this skill to control a bid-document workflow: identify the workspace, check phase gates, route to initialization, phase1 extraction, phase2 composition, or office tools, and verify returned artifacts before moving on."
