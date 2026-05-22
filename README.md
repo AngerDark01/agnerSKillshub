@@ -5,19 +5,31 @@ Personal AI agent skills managed through `skillshare`.
 ## Layout
 
 ```text
-skills/      Flat skill source used by skillshare
-catalog/     Human-readable category index
-extras/      Candidate rules, commands, prompts
-agents/      Reserved for standalone agent definitions
-templates/   Skill templates
+skills/       Categorized source of truth for human review and editing
+sync/skills/  Generated flat source used by skillshare, ignored by Git
+catalog/      Category guide and rationale
+extras/       Candidate rules, commands, prompts
+agents/       Reserved for standalone agent definitions
+templates/    Skill templates
+scripts/      Maintenance scripts
 ```
 
-The `skills/` directory is intentionally flat. This keeps skill names stable when syncing to Codex and other tools. Classification lives in `catalog/README.md` and `skills.yaml`.
+`skills/` is intentionally categorized by function. `sync/skills/` is generated because skillshare turns nested source paths into names such as `category__skill-name`; Codex should keep the clean original names.
+
+## Rebuild Sync Source
+
+Run this after editing categorized skills:
+
+```bash
+scripts/rebuild-sync.sh
+skillshare sync --dry-run
+skillshare sync --force
+```
 
 ## Current Skillshare Source
 
 ```text
-/home/aseit/桌面/桌面/agener_skillshub/skills
+/home/aseit/桌面/桌面/agener_skillshub/sync/skills
 ```
 
 Configured target:
@@ -62,7 +74,7 @@ Normal publish flow:
 ```bash
 git status
 git add .
-git commit -m "Reorganize skill hub"
+git commit -m "Organize skills by function"
 git push origin master
 ```
 

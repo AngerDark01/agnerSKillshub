@@ -5,7 +5,8 @@ This repository is managed by `skillshare`.
 ## Local Setup
 
 ```bash
-skillshare init --source /home/aseit/桌面/桌面/agener_skillshub/skills --targets codex --mode copy --no-copy --no-skill
+scripts/rebuild-sync.sh
+skillshare init --source /home/aseit/桌面/桌面/agener_skillshub/sync/skills --targets codex --mode copy --no-copy --no-skill
 skillshare target codex --mode copy
 skillshare sync --force
 ```
@@ -13,7 +14,7 @@ skillshare sync --force
 Current local config already points to:
 
 ```text
-/home/aseit/桌面/桌面/agener_skillshub/skills
+/home/aseit/桌面/桌面/agener_skillshub/sync/skills
 ```
 
 ## Verify

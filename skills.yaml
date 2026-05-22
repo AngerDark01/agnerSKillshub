@@ -1,292 +1,129 @@
-version: "2.0"
+version: "3.0"
 repo: "AngerDark01/agnerSKillshub"
-layout: flat
+layout: categorized-source-with-flat-sync
 source: "skills"
+skillshare_source: "sync/skills"
 catalog: "catalog/README.md"
+rebuild_sync: "scripts/rebuild-sync.sh"
 
 categories:
-  architecture:
-    - frontend-architecture-designer
-    - project-structure-manager
-    - state-management-architect
-  code-development:
-    - codebase-ontology
-  code-review:
-    - receiving-code-review
-    - requesting-code-review
-  debugging:
-    - systematic-debugging
-  frontend-engineering:
-    - frontend-code-reviewer
-    - frontend-refactor
-    - testing-generator
-  interaction:
-    - interaction-flow-designer
-    - microinteraction-designer
-    - ux-heuristic-reviewer
-  meta:
-    - doc-coauthoring
-    - frontend-design
-    - skill-creator
-  performance:
-    - bundle-size-optimizer
-    - frontend-performance-analyzer
-    - react-render-optimizer
-  planning:
-    - brainstorming
-    - executing-plans
-    - subagent-driven-development
-    - writing-plans
-  product-design:
-    - customer-journey-map
-    - design-sprint
-    - lean-ux
-  product-discovery:
-    - continuous-discovery
-    - mom-test
-    - user-personas
-  product-strategy:
-    - inspired-product
-    - jobs-to-be-done
-    - obviously-awesome
-  requirements:
-    - feature-prioritization
-    - prd-writer
-    - user-stories
-  research:
-    - associative-research
-    - hv-analysis
-    - product-landscape
-    - tech-stack-scout
-  ui:
-    - design-system-architect
-    - figma-to-component
-    - ui-component-generator
-  autobid:
-    - autobid-initializer
-    - autobid-office-tools
-    - autobid-orchestrator
-    - autobid-phase1-extractor
-    - autobid-phase2-composer
-  browser-ui:
-    - chrome-cdp
-    - chrome-cdp-setup
-    - playwright
-    - ui-style-analyst
-    - ui-style-extractor
-  document-office:
-    - doc
-    - pdf
-    - screenshot
-  domain:
-    - ontology-engineer
-  github-workflow:
-    - gh-address-comments
-    - gh-fix-ci
-  meta-tools:
-    - delivery-discipline
-    - self-improvement
-    - skillshare
-    - taskstate-runtime
-  platform-tools:
-    - openai-docs
-    - security-best-practices
-  writing:
-    - khazix-writer
+  00-meta-system:
+    description: Agent operating discipline, skill management, task control, and continuous improvement.
+    skills:
+      - delivery-discipline
+      - self-improvement
+      - skill-creator
+      - skillshare
+      - taskstate-runtime
 
-skills:
-  - name: frontend-architecture-designer
-    category: architecture
-    path: skills/frontend-architecture-designer
-  - name: project-structure-manager
-    category: architecture
-    path: skills/project-structure-manager
-  - name: state-management-architect
-    category: architecture
-    path: skills/state-management-architect
-  - name: codebase-ontology
-    category: code-development
-    path: skills/codebase-ontology
-  - name: receiving-code-review
-    category: code-review
-    path: skills/receiving-code-review
-  - name: requesting-code-review
-    category: code-review
-    path: skills/requesting-code-review
-  - name: systematic-debugging
-    category: debugging
-    path: skills/systematic-debugging
-  - name: frontend-code-reviewer
-    category: frontend-engineering
-    path: skills/frontend-code-reviewer
-  - name: frontend-refactor
-    category: frontend-engineering
-    path: skills/frontend-refactor
-  - name: testing-generator
-    category: frontend-engineering
-    path: skills/testing-generator
-  - name: interaction-flow-designer
-    category: interaction
-    path: skills/interaction-flow-designer
-  - name: microinteraction-designer
-    category: interaction
-    path: skills/microinteraction-designer
-  - name: ux-heuristic-reviewer
-    category: interaction
-    path: skills/ux-heuristic-reviewer
-  - name: doc-coauthoring
-    category: meta
-    path: skills/doc-coauthoring
-  - name: frontend-design
-    category: meta
-    path: skills/frontend-design
-  - name: skill-creator
-    category: meta
-    path: skills/skill-creator
-  - name: bundle-size-optimizer
-    category: performance
-    path: skills/bundle-size-optimizer
-  - name: frontend-performance-analyzer
-    category: performance
-    path: skills/frontend-performance-analyzer
-  - name: react-render-optimizer
-    category: performance
-    path: skills/react-render-optimizer
-  - name: brainstorming
-    category: planning
-    path: skills/brainstorming
-  - name: executing-plans
-    category: planning
-    path: skills/executing-plans
-  - name: subagent-driven-development
-    category: planning
-    path: skills/subagent-driven-development
-  - name: writing-plans
-    category: planning
-    path: skills/writing-plans
-  - name: customer-journey-map
-    category: product-design
-    path: skills/customer-journey-map
-  - name: design-sprint
-    category: product-design
-    path: skills/design-sprint
-  - name: lean-ux
-    category: product-design
-    path: skills/lean-ux
-  - name: continuous-discovery
-    category: product-discovery
-    path: skills/continuous-discovery
-  - name: mom-test
-    category: product-discovery
-    path: skills/mom-test
-  - name: user-personas
-    category: product-discovery
-    path: skills/user-personas
-  - name: inspired-product
-    category: product-strategy
-    path: skills/inspired-product
-  - name: jobs-to-be-done
-    category: product-strategy
-    path: skills/jobs-to-be-done
-  - name: obviously-awesome
-    category: product-strategy
-    path: skills/obviously-awesome
-  - name: feature-prioritization
-    category: requirements
-    path: skills/feature-prioritization
-  - name: prd-writer
-    category: requirements
-    path: skills/prd-writer
-  - name: user-stories
-    category: requirements
-    path: skills/user-stories
-  - name: associative-research
-    category: research
-    path: skills/associative-research
-  - name: hv-analysis
-    category: research
-    path: skills/hv-analysis
-  - name: product-landscape
-    category: research
-    path: skills/product-landscape
-  - name: tech-stack-scout
-    category: research
-    path: skills/tech-stack-scout
-  - name: design-system-architect
-    category: ui
-    path: skills/design-system-architect
-  - name: figma-to-component
-    category: ui
-    path: skills/figma-to-component
-  - name: ui-component-generator
-    category: ui
-    path: skills/ui-component-generator
-  - name: autobid-initializer
-    category: autobid
-    path: skills/autobid-initializer
-  - name: autobid-office-tools
-    category: autobid
-    path: skills/autobid-office-tools
-  - name: autobid-orchestrator
-    category: autobid
-    path: skills/autobid-orchestrator
-  - name: autobid-phase1-extractor
-    category: autobid
-    path: skills/autobid-phase1-extractor
-  - name: autobid-phase2-composer
-    category: autobid
-    path: skills/autobid-phase2-composer
-  - name: chrome-cdp
-    category: browser-ui
-    path: skills/chrome-cdp
-  - name: chrome-cdp-setup
-    category: browser-ui
-    path: skills/chrome-cdp-setup
-  - name: playwright
-    category: browser-ui
-    path: skills/playwright
-  - name: ui-style-analyst
-    category: browser-ui
-    path: skills/ui-style-analyst
-  - name: ui-style-extractor
-    category: browser-ui
-    path: skills/ui-style-extractor
-  - name: doc
-    category: document-office
-    path: skills/doc
-  - name: pdf
-    category: document-office
-    path: skills/pdf
-  - name: screenshot
-    category: document-office
-    path: skills/screenshot
-  - name: ontology-engineer
-    category: domain
-    path: skills/ontology-engineer
-  - name: gh-address-comments
-    category: github-workflow
-    path: skills/gh-address-comments
-  - name: gh-fix-ci
-    category: github-workflow
-    path: skills/gh-fix-ci
-  - name: delivery-discipline
-    category: meta-tools
-    path: skills/delivery-discipline
-  - name: self-improvement
-    category: meta-tools
-    path: skills/self-improvement
-  - name: skillshare
-    category: meta-tools
-    path: skills/skillshare
-  - name: taskstate-runtime
-    category: meta-tools
-    path: skills/taskstate-runtime
-  - name: openai-docs
-    category: platform-tools
-    path: skills/openai-docs
-  - name: security-best-practices
-    category: platform-tools
-    path: skills/security-best-practices
-  - name: khazix-writer
-    category: writing
-    path: skills/khazix-writer
+  01-planning-execution:
+    description: Design validation, implementation planning, and execution workflows.
+    skills:
+      - brainstorming
+      - writing-plans
+      - executing-plans
+      - subagent-driven-development
+
+  02-code-quality:
+    description: Project understanding, debugging, testing, review, and security quality.
+    skills:
+      - codebase-ontology
+      - systematic-debugging
+      - requesting-code-review
+      - receiving-code-review
+      - testing-generator
+      - security-best-practices
+
+  03-frontend-architecture:
+    description: Frontend project structure, module boundaries, and state architecture.
+    skills:
+      - frontend-architecture-designer
+      - project-structure-manager
+      - state-management-architect
+
+  04-frontend-performance:
+    description: Bundle size, Web Vitals, and React rendering performance.
+    skills:
+      - bundle-size-optimizer
+      - frontend-performance-analyzer
+      - react-render-optimizer
+
+  05-ui-design-ux:
+    description: UI generation, design systems, interaction design, visual style extraction, and UX review.
+    skills:
+      - design-system-architect
+      - figma-to-component
+      - frontend-design
+      - frontend-code-reviewer
+      - frontend-refactor
+      - interaction-flow-designer
+      - microinteraction-designer
+      - ui-component-generator
+      - ui-style-analyst
+      - ui-style-extractor
+      - ux-heuristic-reviewer
+
+  06-browser-automation:
+    description: Browser automation, browser setup, and screenshot capture.
+    skills:
+      - chrome-cdp
+      - chrome-cdp-setup
+      - playwright
+      - screenshot
+
+  07-research-analysis:
+    description: Product, market, technical, and deep research.
+    skills:
+      - associative-research
+      - product-landscape
+      - tech-stack-scout
+      - hv-analysis
+
+  08-product-discovery-strategy:
+    description: Product discovery, customer research, positioning, and strategy frameworks.
+    skills:
+      - continuous-discovery
+      - customer-journey-map
+      - design-sprint
+      - inspired-product
+      - jobs-to-be-done
+      - lean-ux
+      - mom-test
+      - obviously-awesome
+      - user-personas
+
+  09-requirements-docs:
+    description: Requirements writing, prioritization, stories, and document production.
+    skills:
+      - feature-prioritization
+      - prd-writer
+      - user-stories
+      - doc-coauthoring
+      - doc
+      - pdf
+
+  10-github-platform:
+    description: GitHub workflow and OpenAI platform documentation.
+    skills:
+      - gh-address-comments
+      - gh-fix-ci
+      - openai-docs
+
+  11-domain-autobid:
+    description: Tender and bid document workflow.
+    skills:
+      - autobid-initializer
+      - autobid-office-tools
+      - autobid-orchestrator
+      - autobid-phase1-extractor
+      - autobid-phase2-composer
+
+  12-domain-ontology:
+    description: Ontology and semantic/domain modeling.
+    skills:
+      - ontology-engineer
+
+  13-writing-content:
+    description: Long-form writing and content style.
+    skills:
+      - khazix-writer
